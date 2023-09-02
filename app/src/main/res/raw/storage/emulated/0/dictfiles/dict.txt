@@ -1,0 +1,53 @@
+﻿branch-oddział, gałąź, filia, odgałęzienie, konar
+determine-ustalać, decydować, determinować, stanowić
+whether-czy
+prompt-podpowiedć, podpowiedz, monit, podpowiadać, szeptać
+sensible-rozsądny, sensowny, odczuwalny, praktyczny, czuły, zmysłowy, świadomy, inteligentny
+staging area-poczekalnia, strefa postojowa
+commit-zatwierdzenie,
+insight-wgląd, wnikliwość, intuicja,
+unmerged-niescalone
+merge-łączyć, scalać, połączyć się, włączać, zlać się, wcielać, kumulować
+include-włączać, zawierać, uwzględniać, objąć, mieścić, wcielać, podciągać
+discard-wyrzucać, odrzucać, porzucić, wylać z pracy, zrzutka
+current-aktualny, bieżący, prąd, nurt, natężęnie prądu, potoczny, rozpowszechniony, obiegowy, nagminny
+hank-motek, talka, kłębek, raksa, pełzacz
+unstaged-niezainscenizowany
+patch-łata, załatać, dosztukować, naprawić, płat
+orphan-sierota
+detached head-odłączona głowa
+push-naciskać, popchnać, pchać, przeć, popychać, wsunać, cisnąć, pchać się
+fetch-sprowadzać, wydobywać, dosawić, osiągać, powodować, zrobić wrażenie
+verbosity-gadatliwość, wielomówność, gadulstwo, pustosłowie
+credential-poświadczenie
+credentials-referencje
+ascending-rosnąco
+descending-malejąco
+persist-utrwal, trwać, wytrwać, upierać się, robić coś nieustannie
+resposne-odpowiedź, reakcja, reagowanie, odzew, oddźwięk, echo, odezwanie się
+snippet-skrawek, strzęp, fragment
+denote-oznaczać, wskazać, znamionować, desygnować, cechować
+transitively-przechodnio
+newly-nowo, niedawno, świeżo, dopiero co
+append-dodać, zawiesić
+tear down-zburzyć, zniszczyć
+amend-modyfikować, poprawić, wnieść poprawki, poprawiać się
+cart-wózek, wóz, fua, furmanka, bryka, zaprząg
+assert-zapewniać, domagać się uznania, dowieść czegoś, ukazać się
+collaborator-współpracownik
+assumption-założenie, przypuszczenie, hipoteza, objęcie, przybranie, przywidzenie
+quantity-ilość, wielkość, liczba, stan, doza
+capable-zdolny, sposobny, uzdoloniony, dopuszczający
+divisible-podzielny
+conformance-zgodność
+foundry-odlewnia, foremnia
+cardinality-liczność
+impose-nakładać, narzucać, dyktować, nakazać, obłożyć, podyktować, przełamać, wyświęcić
+shorthand-stenografia, skrót
+retrieve-odzyskać, odbierać, odnaleźć
+robust-solidny, silny, krzepki, wysportowany
+adage-powiedzenie, przysłowie
+quote-cudzysłów
+provide-dostarczać, zapewniać, przewidywać, dać, umożliwiać
+interest-odsetki
+stack-stos, sterta, komin, stóg, kupa, bróg

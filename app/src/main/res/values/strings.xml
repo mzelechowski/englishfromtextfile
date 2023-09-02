@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">englishfromtextfile</string>
+    <string name="ManualContext">
+        This program makes it easy to learn words of any foreign language.\n\n
+        This program searches the directory \"/dictfiles/\" for dictionary text files.\n\n
+        Files must have a .txt extension.\n\n
+        If no directory or files are found, the program uses the default dictionary file placed in the program code.\n\n
+        Text dictionary files must have the following format:\n\n
+            branch-oddział, gałąź, filia\n
+            determine-ustalać, decydować\n
+            whether-czy\n
+            prompt-podpowiedć, podpowiedz, monit\n
+            etc\n\n
+        Each keyword and its translation must be on the same line in the text file.\n\n
+        The key word is separated from its translations by a dash -.\n\n
+     \n\n
+        author: mzelechowski79@gmail.com
+    </string>
+</resources>
