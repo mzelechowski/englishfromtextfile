@@ -8,6 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,11 @@ public class SetDictionary extends AppCompatActivity {
             String selectedFilePath = fileList.get(position);
             Intent intent = new Intent(SetDictionary.this, MainActivity.class);
             intent.putExtra("selectedFilePath", selectedFilePath);
-            Toast.makeText(getApplicationContext(), "I set the dictionary to: \n" + selectedFilePath, Toast.LENGTH_LONG).show();
+            if (!selectedFilePath.equals("Back to Main")) {
+                Toast.makeText(getApplicationContext(), "The dictionary has been set to: \n" + selectedFilePath, Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "The dictionary has not been changed", Toast.LENGTH_LONG).show();
+            }
             startActivity(intent);
             finish();
         });
@@ -56,6 +61,8 @@ public class SetDictionary extends AppCompatActivity {
             }
             adapter.notifyDataSetChanged(); // Zaktualizuj ListView
         } else {
+            fileList.add("Back to Main");
+            adapter.notifyDataSetChanged();
             Toast.makeText(getApplicationContext(), "check if you have directory \"/dictfiles/\" with files *.txt", Toast.LENGTH_LONG).show();
         }
     }

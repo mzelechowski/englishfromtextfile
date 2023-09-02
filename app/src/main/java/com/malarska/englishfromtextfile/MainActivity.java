@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
         checkPermissionToReadExternalStorage();
 
-        if (getIntent().hasExtra("selectedFilePath")) {
+        if (getIntent().hasExtra("selectedFilePath")
+                && !getIntent().getStringExtra("selectedFilePath").equals("Back to Main")) {
             fileName = getIntent().getStringExtra("selectedFilePath");
         }
 
