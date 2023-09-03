@@ -142,10 +142,15 @@ public class MainActivity extends AppCompatActivity {
         otherMeanings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                otherMeanings.setText(dictionaryAsMap.get(question.getText())
-                        .toString().replace("[", "").replace("]", ""));
+                showOtherMeanings();
             }
         });
+    } //end onCreate
+
+
+    private void showOtherMeanings() {
+        otherMeanings.setText(dictionaryAsMap.get(question.getText())
+                .toString().replace("[", "").replace("]", ""));
     }
 
     private void checkPermissionToReadExternalStorage() {
@@ -166,12 +171,13 @@ public class MainActivity extends AppCompatActivity {
                         if (answer.contentEquals(t.getText())) {
                             t.setBackgroundColor(Color.GREEN);
                             incrementCorrect();
-                            otherMeanings.setText(dictionaryAsMap.get(question.getText()).toString().replace("[", "").replace("]", ""));
+                            showOtherMeanings();
                             dictionaryAsMap.remove(question.getText());
                             leftWords.setText(String.valueOf(dictionaryAsMap.size()));
                         } else {
                             t.setBackgroundColor(Color.RED);
                             incrementInCorrect();
+                            showOtherMeanings();
                             for (TextView t : textViewAnswers) {
                                 if (answer.equals(t.getText()))
                                     t.setBackgroundColor(Color.GREEN);
