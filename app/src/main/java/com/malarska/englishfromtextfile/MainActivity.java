@@ -32,6 +32,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.TreeMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         checkPermissionToReadExternalStorage();
 
         if (getIntent().hasExtra("selectedFilePath")
-                && !getIntent().getStringExtra("selectedFilePath").equals("Back to Main")) {
+                && !Objects.equals(getIntent().getStringExtra("selectedFilePath"), "Back to Main")) {
             fileName = getIntent().getStringExtra("selectedFilePath");
         }
 
@@ -162,11 +163,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (!giveAnswer) {
-                        if (answer.equals(t.getText())) {
+                        if (answer.contentEquals(t.getText())) {
                             t.setBackgroundColor(Color.GREEN);
                             incrementCorrect();
                             otherMeanings.setText(dictionaryAsMap.get(question.getText()).toString().replace("[", "").replace("]", ""));
                             dictionaryAsMap.remove(question.getText());
+                            leftWords.setText(String.valueOf(dictionaryAsMap.size()));
                         } else {
                             t.setBackgroundColor(Color.RED);
                             incrementInCorrect();
@@ -185,6 +187,11 @@ public class MainActivity extends AppCompatActivity {
     private void loadDataFromFile(String fileName) {
         try {
             dictionaryAsMap = getMapFromFile(fileName);
+            if (dictionaryAsMap.keySet().size() == 0 || dictionaryAsMap.values().size() == 0) {
+                fileName = "null";
+                dictionaryAsMap = getMapFromFile(fileName);
+                Toast.makeText(getApplicationContext(), "The dictionary file has errors.\n Default dictionary has been set.", Toast.LENGTH_LONG).show();
+            }
             totalWords.setText(String.valueOf(dictionaryAsMap.size()));
             leftWords.setText(String.valueOf(dictionaryAsMap.size()));
         } catch (IOException e) {
@@ -212,6 +219,7 @@ public class MainActivity extends AppCompatActivity {
         answer = dictionaryAsMap.get(shuffleKeyList.get(0)).get(0);
         List<Integer> randNum = new ArrayList<>(Arrays.asList(0, 1, 2, 3));
         Collections.shuffle(randNum);
+        System.out.println(shuffleKeyList);
         int i = 0;
         for (TextView t : textViewAnswers) {
             if (randNum.get(i) >= shuffleKeyList.size())
@@ -251,23 +259,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
             while ((line = br.readLine()) != null) {
-                String[] tab = line.split("[-,]");
-                LinkedList wordTranslete = new LinkedList();
+                LinkedList translationList = new LinkedList();
+                String[] tab = line.split("==|[+]");
                 for (int i = 1; i < tab.length; i++) {
-                    wordTranslete.add(tab[i].trim());
+                    translationList.add(tab[i].trim());
                 }
-                dictionary.put(tab[0].replaceAll("[^\\x00-\\x7F]", "").trim(), wordTranslete);
+                dictionary.put(tab[0].replaceAll("[^\\x00-\\x7F]", "").trim(), translationList);
             }
 //            if (fis != null)
 //                fis.close();
             if (is != null)
                 is.close();
-
         } catch (FileNotFoundException e) {
             System.out.println("Błąd z getMapFromFile(): " + e.getMessage());
             e.printStackTrace();
         }
-        return sortBubbleByMe(dictionary);
+        return dictionary;
     }
 
     private List<String> getKeyListFromMap(Map<String, List<String>> dictionary) {
