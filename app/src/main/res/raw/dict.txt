@@ -1,53 +1,132 @@
-﻿branch==oddział+ gałąź+ filia+ odgałęzienie+ konar
-determine==ustalać+ decydować+ determinować+ stanowić
-whether==czy
-prompt==podpowiedć+ podpowiedz+ monit+ podpowiadać+ szeptać
-sensible==rozsądny+ sensowny+ odczuwalny+ praktyczny+ czuły+ zmysłowy+ świadomy+ inteligentny
-staging area==poczekalnia+ strefa postojowa
-commit==zatwierdzenie+
-insight==wgląd+ wnikliwość+ intuicja+
-unmerged==niescalone
-merge==łączyć+ scalać+ połączyć się+ włączać+ zlać się+ wcielać+ kumulować
-include==włączać+ zawierać+ uwzględniać+ objąć+ mieścić+ wcielać+ podciągać
-discard==wyrzucać+ odrzucać+ porzucić+ wylać z pracy+ zrzutka
-current==aktualny+ bieżący+ prąd+ nurt+ natężęnie prądu+ potoczny+ rozpowszechniony+ obiegowy+ nagminny
-hank==motek+ talka+ kłębek+ raksa+ pełzacz
-unstaged==niezainscenizowany
-patch==łata+ załatać+ dosztukować+ naprawić+ płat
-orphan==sierota
-detached head==odłączona głowa
-push==naciskać+ popchnać+ pchać+ przeć+ popychać+ wsunać+ cisnąć+ pchać się
-fetch==sprowadzać+ wydobywać+ dosawić+ osiągać+ powodować+ zrobić wrażenie
-verbosity==gadatliwość+ wielomówność+ gadulstwo+ pustosłowie
-credential==poświadczenie
-credentials==referencje+ list polecający+ list uwierzytelniający+ potwierdzenie tożsamości+ kwalifikacje+ kompetencje
-ascending==rosnąco
-descending==malejąco
-persist==utrwal+ trwać+ wytrwać+ upierać się+ robić coś nieustannie
-resposne==odpowiedź+ reakcja+ reagowanie+ odzew+ oddźwięk+ echo+ odezwanie się
-snippet==skrawek+ strzęp+ fragment
-denote==oznaczać+ wskazać+ znamionować+ desygnować+ cechować
-transitively==przechodnio
-newly==nowo+ niedawno+ świeżo+ dopiero co
-append==dodać+ zawiesić
-tear down==zburzyć+ zniszczyć
-amend==modyfikować+ poprawić+ wnieść poprawki+ poprawiać się
-cart==wózek+ wóz+ fua+ furmanka+ bryka+ zaprząg
-assert==zapewniać+ domagać się uznania+ dowieść czegoś+ ukazać się
-collaborator==współpracownik
-assumption==założenie+ przypuszczenie+ hipoteza+ objęcie+ przybranie+ przywidzenie
-quantity==ilość+ wielkość+ liczba+ stan+ doza
-capable==zdolny+ sposobny+ uzdoloniony+ dopuszczający
-divisible==podzielny
-conformance==zgodność
-foundry==odlewnia+ foremnia
-cardinality==liczność
-impose==nakładać+ narzucać+ dyktować+ nakazać+ obłożyć+ podyktować+ przełamać+ wyświęcić
-shorthand==stenografia+ skrót
-retrieve==odzyskać+ odbierać+ odnaleźć
-robust==solidny+ silny+ krzepki+ wysportowany
-adage==powiedzenie+ przysłowie
-quote==cudzysłów
-provide==dostarczać+ zapewniać+ przewidywać+ dać+ umożliwiać
-interest==odsetki
-denote==oznaczać+ wskazać+ znamionować+ desygnować+ cechować
+﻿address==adres
+age==wiek
+date of birth==data urodzin
+place of birth==miejsce urodzin
+divorced==rozwiedziony rozwiedziona
+fill in a form==wypełnić formularz
+male==płci męskiej
+female==płci żeńskiej
+marital status==stan cywilny
+middle name==drugie imię
+nationality==narodowość
+occupation==zawód
+personal data==dane osobowe
+single==stanu wolnego
+surname==nazwisko
+widow==wdowa
+widower==wdowiec
+attractive==atrakcyjny
+unattractive==nieatrakcyjny
+be similar to==być podobnym do
+description==opis
+good-looking==atrakcyjny+ przystojny+ ładny+ dorodny+ urodziwy
+handsome==przystojny
+look like==wyglądać jak
+be of medium height==być średniego wzrostu
+be overweight==mieć nadwagę
+fat==gruby
+plump==pulchny
+short==niski
+slim==szczupły
+tall==wysoki
+thin==chudy
+well-built==dobrze zbudowany
+adult==dorosły+ osoba dorosła
+elderly==w podeszłym wieku
+in his/her twenties==po dwudziestce
+in his/her teens==nastoletni/nastoletnia
+middle-aged==w średnim wieku
+old==stary
+young==młody
+beard==broda
+freckles==piegi
+full/thin lips==wąskie usta
+high forehead==wysokie czoło
+moustache==wąsy
+pale==blady
+pimple==pryszcz
+scar==blizna
+snub nose==zadarty nos
+strong chin==wydatny podbródek
+tiny eyes==małe oczy
+wrinkles==zmarszczki
+bald==łysy
+blond==blond
+fair==jasne
+dark==ciemne
+red==rude
+grey==siwe
+curly==kręcone
+dyed==farbowane
+fringe==grzywka
+pony tail==kucyk
+spiky==sterczące
+straight==proste
+wavy==falujące
+casual==nieformalny
+comfortable==wygodny
+elegant/smart==elegancki
+fashionable==modny
+formal==oficjalny
+loose==luźny
+scruffy==niechlujny
+tight==obcisły
+blouse==bluzka
+boxer shorts==bokserki
+coat==płaszcz
+dress(rzeczownik)==sukienka
+hoody==bluza z kapturem
+fleece==polar
+jacket==kurtka
+jumper==sweter
+pair of jeans==para dżinsów
+raincoat==płaszcz przeciw deszczowy
+shirt==koszula
+shorts==spodenki
+skirt==spódnica
+socks==skarpetki
+suit==garnitur
+sweater==sweter
+sweatshirt==bluza
+tie==krawat
+tights==rajstopy
+tracksuit==dres
+trousers==spodnie
+underwear==bielizna
+boots==buty za kostkę
+high hills==buty na obcasie
+shoes==buty
+slippers==kapcie
+trainers==buty sportowe
+wellingtons==kalosze
+belt==pasek
+bracelet==bransoletka
+cap==czapka z daszkiem
+earrings==kolczyki
+gloves==rękawiczki
+hat==czapka+kapelusz
+jewellery==biżuteria
+necklace==naszyjnik
+scarf==szalik
+umbrella==parasol
+button==guzik
+pocket==kieszeń
+sleeve==rękaw
+zip==zamek błyskawiczny
+cotton==bawełna
+leather==skóra
+plain==gładki
+silk==jedwab
+woolen==wełniany
+dress(czasownik)==ubrać się
+dress up as sth==przebrać się za coś
+fit==pasować(rozmiarem)
+get dressed==ubierać się
+go with sth==pasować do czegoś
+look(good)==wyglądać(dobrze)
+match==pasować
+put on==założyć
+suit==pasować(kolorem lub fasonem)
+take off==zdjąć
+try on==przymierzyć
+wear==nosić(ubrania)

@@ -38,6 +38,9 @@ import java.util.TreeMap;
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_READ_EXTERNAL_STORAGE = 1;
+    private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 2;
+    private static final int REQUEST_MANAGE_EXTERNAL_STORAGE=3;
+    private static final int REQUEST_READ_MEDIA_IMAGES=4;
     private final static String STORAGE = Environment.getExternalStorageDirectory().getAbsolutePath();
     private final static String PATH = "/dictfiles/";
     private final static String FILENAME = "dict.txt";
@@ -64,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         checkPermissionToReadExternalStorage();
+        checkPermissionToWriteExternalStorage();
+        checkPermissionToManageExternalStorage();
+        checkPermissionToReadMediaImages();
 
         if (getIntent().hasExtra("selectedFilePath")
                 && !Objects.equals(getIntent().getStringExtra("selectedFilePath"), "Back to Main")) {
@@ -151,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
     private void showOtherMeanings() {
         otherMeanings.setText(dictionaryAsMap.get(question.getText())
                 .toString().replace("[", "").replace("]", ""));
+        giveAnswer = true;
     }
 
     private void checkPermissionToReadExternalStorage() {
@@ -159,6 +166,33 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                     REQUEST_READ_EXTERNAL_STORAGE);
+        }
+    }
+
+    private void checkPermissionToWriteExternalStorage() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    REQUEST_WRITE_EXTERNAL_STORAGE);
+        }
+    }
+
+    private void checkPermissionToManageExternalStorage() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.MANAGE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.MANAGE_EXTERNAL_STORAGE},
+                    REQUEST_MANAGE_EXTERNAL_STORAGE);
+        }
+    }
+
+    private void checkPermissionToReadMediaImages() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                    REQUEST_READ_MEDIA_IMAGES);
         }
     }
 

@@ -9,7 +9,6 @@ import android.os.Handler;
 public class LogoActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

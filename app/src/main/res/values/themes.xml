@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Englishfromtextfile" parent="Base.Theme.Englishfromtextfile" />
+    <style name="Theme.ForeignWordsFromTxtFile" parent="Base.Theme.Englishfromtextfile" />
 </resources>
